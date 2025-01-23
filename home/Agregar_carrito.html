@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff6f91;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #ff6f91;
+            color: white;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6f91;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            background-color: #ff4765;
+        }
+
+        .total {
+            text-align: right;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .acciones {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .acciones a {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Carrito de Compras</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zapatos Deportivos</td>
+                    <td>$50</td>
+                    <td>1</td>
+                    <td>$50</td>
+                    <td>
+                        <a href="#" class="boton">Eliminar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sandalias</td>
+                    <td>$30</td>
+                    <td>2</td>
+                    <td>$60</td>
+                    <td>
+                        <a href="#" class="boton">Eliminar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total">
+            <strong>Total a pagar: $110</strong>
+        </div>
+        <div class="acciones">
+            <a href="catalogo.html" class="boton">Seguir Comprando</a>
+            <a href="finalizar_pedido.html" class="boton">Finalizar Pedido</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
